@@ -1,0 +1,9 @@
+---
+
+- name: Install BLAST via conda
+  conda_install:
+    name: 'blast'
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: bioconda
+    environment: "bl_{{ env_name }}"
